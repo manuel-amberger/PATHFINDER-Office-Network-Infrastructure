@@ -42,9 +42,9 @@ Comprehensive network design for an office building featuring core HA redundancy
 
 | RU&nbsp;Range | Front View | Back View |
 | :---: | :---: | :---: |
-| RU&nbsp;42-28 | ![Top Section](./img/core_rack_ra00_42-28_front.png) | ![Bottom Section](./img/core_rack_ra00_42-28_back.png) |
-| RU&nbsp;27-18 | ![Top Section](./img/core_rack_ra00_27-18_front.png) | ![Bottom Section](./img/core_rack_ra00_27-18_back.png) |
-| RU&nbsp;16-1 | ![Top Section](./img/core_rack_ra00_16-1_front.png) | ![Bottom Section](./img/core_rack_ra00_16-1_back.png) |
+| RU&nbsp;42-28 | ![Core Rack RA00 42-28 Front](./img/core_rack_ra00_42-28_front.png) | ![Core Rack RA00 42-28 Back](./img/core_rack_ra00_42-28_back.png) |
+| RU&nbsp;27-18 | ![Core Rack RA00 27-18 Front](./img/core_rack_ra00_27-18_front.png) | ![Core Rack RA00 27-18 Back](./img/core_rack_ra00_27-18_back.png) |
+| RU&nbsp;16-1 | ![Core Rack RA00 16-1 Front](./img/core_rack_ra00_16-1_front.png) | ![Core Rack RA00 16-1 Back](./img/core_rack_ra00_16-1_back.png) |
 
 ### Room Distribution Rack RA01 Layout (R01-R07)
 
@@ -52,7 +52,7 @@ Comprehensive network design for an office building featuring core HA redundancy
 
 | Front View | Back View |
 | :---: | :---: |
-| ![Top Section](./img/room_rack_ra01_front.png) | ![Bottom Section](./img/room_rack_ra01_back.png) |
+| ![Room Rack RA01 Front](./img/room_rack_ra01_front.png) | ![Room Rack RA01 Back](./img/room_rack_ra01_back.png) |
 
 ### Room Distribution Rack RA02 Layout (R08-R11)
 
@@ -60,36 +60,52 @@ Comprehensive network design for an office building featuring core HA redundancy
 
 | Front View | Back View |
 | :---: | :---: |
-| ![Top Section](./img/room_rack_ra02_front.png) | ![Bottom Section](./img/room_rack_ra02_back.png) |
+| ![Room Rack RA02 Front](./img/room_rack_ra02_front.png) | ![Room Rack RA02 Back](./img/room_rack_ra02_back.png) |
 
 > **Note on Rack Showcase:**  
 > The rack visualizations featured above serve as representative showcase examples of the infrastructure deployment. Additional floor distribution racks (e.g., managing rooms R12–R17) are fully integrated into the master network plan.
 
-### Room 0 (R00) Infrastructure
+### Room 0 (R00) Infrastructure - Core Server Room
 
 * **Scope & Function:** Detailed spatial layout of the main server room (**R00**), highlighting the central rack deployment and critical environmental protection systems.
-* **Key Components Identified in Layout:**
+* **Key Components in Layout:**
   * **Core Rack (`R00-RA00`):** Encloses the primary High-Availability (HA) network equipment, servers, and central power management.
   * **Environmental Monitoring System (`R00-RM01`):** APC NetBotz Room Monitor 355 managing connected room sensors for environmental control.
   * **Dedicated Room Sensors:** Temperature, Smoke and leak detection sensors placed around the server room to prevent physical water/fire damage.
   * **Access & Connectivity:** Integrated network outlet (`R00-DO1-LC`) and door/access control integration.
 
-[![Floor Plan](./img/r00_infrastructure.png)](./img/r00_infrastructure.png)
+[![Room 0 Infrastructure](./img/r00_infrastructure.png)](./img/r00_infrastructure.png)
 
-### Room 1 (R01) Infrastructure
+### Room 1 (R01) Infrastructure - Dual Office
 
-[![Floor Plan](./img/r01_infrastructure.png)](./img/r01_infrastructure.png)
+* **Scope & Function:** Spatial layout and workstation infrastructure deployment for the dual office space (**R01**).
+* **Key Components in Layout:**
+  * **Room Distribution Rack (`R01-RA01`):** Dedicated room distribution rack feeding the local office connections.
+  * **Dual Workstations (`PC-1` & `PC-2`):** Modern workstation setups configured with network drops for primary workstations.
+  * **Wireless Coverage (`R01-AP01`):** Centrally mounted Cisco Wi-Fi access point to ensure optimal wireless coverage.
+  * **Redundant Power Infrastructure:** Equipped with dual, redundant wall outlets for the distribution rack, allowing immediate failover to the secondary outlet in the event of physical damage to the primary socket.
 
-### Room 17 (R17) Infrastructure
+[![Room 1 Infrastructure](./img/r01_infrastructure.png)](./img/r01_infrastructure.png)
 
-[![Floor Plan](./img/r17_infrastructure.png)](./img/r17_infrastructure.png)
+### Room 17 (R17) Infrastructure - Meeting Room
 
-## 💾 Pathfinder Projekt-Datei
+* **Scope & Function:** Spatial layout and multimedia infrastructure deployment for the large conference room (**R17**, configured for 12–14 persons).
+* **Key Components in Layout:**
+  * **Room Distribution Rack (`R17-RA04`):** Dedicated room distribution rack supplying all network drops, media technology, and peripheral connections in the rooms R15, R16, RAWC, RBWC, and R17.
+  * **Redundant Power Infrastructure:** Equipped with dual, redundant wall outlets (`R17-SD01-1x`, `R17-SD02-1x`) for the distribution rack, allowing immediate failover in case of physical socket damage.
+  * **Conference Seats:** Structured desk layout with individual network drops for participants around the main conference table.
+  * **Media Technology (`R17-BEAM02`):** Network-connected projector (Epson EB-L530U) positioned over the conference table for seamless audio and video streaming.
+  * **Digital Door Display (`R17-RIM04`):** PoE-powered display (Crestron TSS-770) installed at the entrance for dynamic room occupancy scheduling.
+  * **Wireless Coverage (`R17-AP08`):** Centrally mounted access point to handle high device density during meetings.
 
-Die vollständige Projekt- und Gebäudedokumentation inkl. aller Racks, Trassen und Kabelverbindungen liegt als **Pathfinder-Export** im Repository vor:
+[![Room 17 Infrastructure](./img/r17_infrastructure.png)](./img/r17_infrastructure.png)
 
-* **Datei:** [`/exports/campus-network-design.pfp`](./exports/campus-network-design.pfp)
-* **Software:** Benötigt *Pathfinder (Kabel- und Asset-Management)* zum Importieren und Bearbeiten der vollständigen 3D-/Rack-Ansichten.
+## Pathfinder Project File
+
+The complete project and building documentation, including all racks, cable trays, and connections, is available as a **Pathfinder export** in the repository:
+
+* **File:** [`./exports/office_network_infrastructure.pfp`](./exports/office_network_infrastructure.pfp)
+* **Software:** Requires *Pathfinder (Cable and Asset Management)* to import and edit the full room and rack views.
 
 ## About
 
