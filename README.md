@@ -100,6 +100,23 @@ Comprehensive network design for an office building featuring core HA redundancy
 > **Note on Showcase:**  
 > The room and rack visualizations featured above serve as representative showcase examples of the infrastructure deployment. Additional rooms and floor distribution racks (e.g., managing rooms R12–R17) are fully integrated into the master network plan.
 
+## Key Hardware Stack
+
+| Category | Component Model | Purpose / Details |
+| :---: | :---: | :---: |
+| **Core Switches** | Cisco Nexus 93180YC-FX | Core routing & high-speed fiber aggregation |
+| **Distribution Switches**| Cisco CBS350-24P-4X | Floor access & PoE+ distribution for workstations |
+| **Firewalls** | Fortinet FortiGate 100F (HA Cluster) | Enterprise perimeter defense & VPN gateway |
+| **Terminal Server** | Opengear OM2232 | Out-of-band management & secure remote console access |
+| **Server** | Dell EMC PowerEdge R550 | Virtualization host & primary enterprise workloads |
+| **WLAN Controller** | Cisco Catalyst 9800-L-F | Centralized wireless network management & policy control |
+| **Access Points** | Cisco Catalyst 9115AXI | Wi-Fi 6 high-density coverage |
+| **NAS** | QNAP TS-h1277XU-RP | Decentralized offsite storage & automated disaster recovery backup |
+| **Environmental Mon.** | APC NetBotz Room Monitor 355 | Room 0 physical security & sensor integration |
+| **Door Displays** | Crestron TSS-770 | PoE scheduling screens at conference rooms |
+| **Printers** | Brother MFC-L9570CDW | Networked multi-function printing, scanning, and copying |
+| **Projector** | Epson EB-L530U | Laser projector in conference room R17 |
+
 ## Pathfinder Project File
 
 The complete project and building documentation, including all racks, cable trays, and connections, is available as a **Pathfinder export** in the repository:
