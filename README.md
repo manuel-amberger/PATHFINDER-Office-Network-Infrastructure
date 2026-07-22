@@ -62,9 +62,6 @@ Comprehensive network design for an office building featuring core HA redundancy
 | :---: | :---: |
 | ![Room Rack RA02 Front](./img/room_rack_ra02_front.png) | ![Room Rack RA02 Back](./img/room_rack_ra02_back.png) |
 
-> **Note on Rack Showcase:**  
-> The rack visualizations featured above serve as representative showcase examples of the infrastructure deployment. Additional floor distribution racks (e.g., managing rooms R12–R17) are fully integrated into the master network plan.
-
 ### Room 0 (R00) Infrastructure - Core Server Room
 
 * **Scope & Function:** Detailed spatial layout of the main server room (**R00**), highlighting the central rack deployment and critical environmental protection systems.
@@ -99,6 +96,9 @@ Comprehensive network design for an office building featuring core HA redundancy
   * **Wireless Coverage (`R17-AP08`):** Centrally mounted access point to handle high device density during meetings.
 
 [![Room 17 Infrastructure](./img/r17_infrastructure.png)](./img/r17_infrastructure.png)
+
+> **Note on Showcase:**  
+> The room and rack visualizations featured above serve as representative showcase examples of the infrastructure deployment. Additional rooms and floor distribution racks (e.g., managing rooms R12–R17) are fully integrated into the master network plan.
 
 ## Pathfinder Project File
 
