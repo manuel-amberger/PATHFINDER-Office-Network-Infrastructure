@@ -30,14 +30,44 @@ Comprehensive network design for an office building featuring core HA redundancy
   * **Network Printing:** 2 centrally located multifunction printers in the open-space area, seamlessly integrated and accessible across all departments.
   * **Conference Room Media:** Low-maintenance, network-capable laser projectors in conference rooms for effortless wireless audio and video transmission.
 
-### Core Rack Layout (Detailansichten)
+## Architectural Layouts & Rack Designs
 
-| Obere Sektion (HE 25–42) | Untere Sektion (HE 01–24) |
+### Floor Plan
+
+[![Floor Plan](./img/office_floor_plan.png)](./img/office_floor_plan.png)
+
+### Core Rack RA00 Layout (RA01-RA04)
+
+* **Scope & Location:** Situated in the central server room (**R00**), this main rack houses the entire enterprise core infrastructure. It hosts the fully redundant High-Availability (HA) cluster (firewalls, core switches, WLAN controllers, and physical servers), the central power distribution (UPS/ATS), out-of-band management equipment, and the main environmental monitoring system. It manages room distributors **RA01, RA02, RA03, and RA04**
+
+| RU&nbsp;Range | Front View | Back View |
+| :---: | :---: | :---: |
+| RU&nbsp;42-28 | ![Top Section](./img/core_rack_ra00_42-28_front.png) | ![Bottom Section](./img/core_rack_ra00_42-28_back.png) |
+| RU&nbsp;27-18 | ![Top Section](./img/core_rack_ra00_27-18_front.png) | ![Bottom Section](./img/core_rack_ra00_27-18_back.png) |
+| RU&nbsp;16-1 | ![Top Section](./img/core_rack_ra00_16-1_front.png) | ![Bottom Section](./img/core_rack_ra00_16-1_back.png) |
+
+### Room Distribution Rack RA01 Layout (R01-R07)
+
+* **Scope:** This distribution rack manages network connections for rooms **R01, R02, R03, R04, R05, R06, and R07**.
+
+| Front View | Back View |
 | :---: | :---: |
-| ![Top Section](./img/core_rack_ra00_42-28_frot.png) | ![Bottom Section](./img/core_rack_ra00_27-18_front.png) |
-| ![Top Section](./img/core_rack_ra00_42-28_front.png) | ![Bottom Section](./img/core_rack_ra00_27-18_front.png) |
+| ![Top Section](./img/room_rack_ra01_front.png) | ![Bottom Section](./img/room_rack_ra01_back.png) |
 
-[![Core Rack Front](./img/core-rack-front.png)](./img/core-rack-front.png)
+### Room Distribution Rack RA02 Layout (R08-R11)
+
+* **Scope & Location:** Located in a separate fire compartment, this rack houses the decentralized NAS backup system. It manages network connections for rooms **R08, R09, R10, and R11**.
+
+| Front View | Back View |
+| :---: | :---: |
+| ![Top Section](./img/room_rack_ra02_front.png) | ![Bottom Section](./img/room_rack_ra02_back.png) |
+
+> **Note on Rack Showcase:**  
+> The rack visualizations featured above serve as representative showcase examples of the infrastructure deployment. Additional floor distribution racks (e.g., managing rooms R12–R17) are fully integrated into the master network plan.
+
+### Room 0 (R00) Infrastructure
+
+
 
 ## 💾 Pathfinder Projekt-Datei
 
