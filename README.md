@@ -67,7 +67,22 @@ Comprehensive network design for an office building featuring core HA redundancy
 
 ### Room 0 (R00) Infrastructure
 
+* **Scope & Function:** Detailed spatial layout of the main server room (**R00**), highlighting the central rack deployment and critical environmental protection systems.
+* **Key Components Identified in Layout:**
+  * **Core Rack (`R00-RA00`):** Encloses the primary High-Availability (HA) network equipment, servers, and central power management.
+  * **Environmental Monitoring System (`R00-RM01`):** APC NetBotz Room Monitor 355 managing connected room sensors for environmental control.
+  * **Dedicated Room Sensors:** Temperature, Smoke and leak detection sensors placed around the server room to prevent physical water/fire damage.
+  * **Access & Connectivity:** Integrated network outlet (`R00-DO1-LC`) and door/access control integration.
+
 [![Floor Plan](./img/r00_infrastructure.png)](./img/r00_infrastructure.png)
+
+### Room 1 (R01) Infrastructure
+
+[![Floor Plan](./img/r01_infrastructure.png)](./img/r01_infrastructure.png)
+
+### Room 17 (R17) Infrastructure
+
+[![Floor Plan](./img/r17_infrastructure.png)](./img/r17_infrastructure.png)
 
 ## 💾 Pathfinder Projekt-Datei
 
