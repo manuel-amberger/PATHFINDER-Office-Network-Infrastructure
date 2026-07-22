@@ -67,7 +67,7 @@ Comprehensive network design for an office building featuring core HA redundancy
 
 ### Room 0 (R00) Infrastructure
 
-
+[![Floor Plan](./img/r00_infrastructure.png)](./img/r00_infrastructure.png)
 
 ## 💾 Pathfinder Projekt-Datei
 
